@@ -235,8 +235,8 @@ hr.about  {
 }
 
 div.main-wrapper {
-  width: 100%; 
-  height: 80%; 
+  width: 100%;
+  height: 80%;
   overflow: hidden;
 }
 
@@ -249,13 +249,13 @@ div.main-wrapper {
   color: #7C1E44;
   text-decoration: none;
   font-weight: bold;
-} 
+}
 
 .wrapper a:hover {
   color: #C7306F;
 }
 
-.header { 
+.header {
   width: 80%;
   margin: 0 auto 1em;
   text-align: center;
@@ -283,20 +283,20 @@ hr.divider-line {
 }
 
 #bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
   height: 200%;
 }
 
 #bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   min-width: 50%;
   min-height: 50%;
   -webkit-filter: brightness(50%);
@@ -445,7 +445,7 @@ Media Queries
   }
 
   p.caption-title {
-    font-size: 1.5em;  
+    font-size: 1.5em;
   }
 
   p.caption-text {
@@ -466,7 +466,7 @@ Media Queries
   }
 
   .nav .main {
-    margin: 1em auto 0; 
+    margin: 1em auto 0;
     font-size: 3em;
     width: 90%;
   }
@@ -487,11 +487,11 @@ Media Queries
     display: none;
   }
 
-  img.beers-pic { 
-    display: none; 
+  img.beers-pic {
+    display: none;
   }
 
-  img.beers-pic-mobile { 
+  img.beers-pic-mobile {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -526,13 +526,7 @@ Media Queries
 
 }
 
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-device-width : 480px) {
-
-}
-
-/* Added for Buttons */ 
+/* Added for Buttons */
 @media only screen and (min-device-width : 768px) {
 
   .btn-5 {
@@ -609,15 +603,51 @@ Media Queries
 
 }
 
-/* Custom, iPhone Retina */ 
-@media only screen and (max-device-width : 320px) {
+/* Extra Small Devices, Phones */
+@media only screen and (max-device-width : 480px) {
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h1.hero-title {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h2.subhead-text {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  p.caption-title {
+    font-size: 1.5em;
+  }
+
+  p.caption-text {
+    font-size: 1em;
+  }
+
+  p.footer-text {
+    font-size: .5em;
+  }
 
   .wrapper {
     width: 90%;
   }
 
   .nav .main {
-    margin: 1em auto 0; 
+    margin: 1em auto 0;
     font-size: 3em;
     width: 90%;
   }
@@ -633,8 +663,24 @@ Media Queries
     margin: 0 auto;
   }
 
+  .nav a {
+    font-size: 1em;
+  }
+
   hr {
     display: none;
+  }
+
+  .btn-5 {
+    height: 75px;
+  }
+
+  .btn-5 span {
+    transform: translateY(35%);
+  }
+
+  .scrollup {
+    right: 20px;
   }
 
 }
