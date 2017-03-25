@@ -129,7 +129,7 @@ span.drop {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: 400;
   color: #3E5759;
 }
 
@@ -248,7 +248,7 @@ div.main-wrapper {
 .wrapper a {
   color: #7C1E44;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .wrapper a:hover {
