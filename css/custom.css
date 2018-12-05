@@ -10,22 +10,22 @@ body {
 }
 
 @font-face {
-  font-family: 'Bodoni';
   src: url('../fonts/BauerBodoniStd-Roman.otf');
+  font-family: 'Bodoni';
 }
 
 @font-face {
-  font-family: 'Bodoni Bold';
   src: url('../fonts/BodoniStd-Poster.otf');
+  font-family: 'Bodoni Bold';
 }
 
 h1 {
   font-family: "Bodoni Bold", Helvetica, Arial, Sans-Serif;
   text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: .125em;
   font-size: 3em;
+  font-weight: 400;
   line-height: 1.25;
+  letter-spacing: .125em;
   text-align: center;
   color: darkslategray;
 }
@@ -36,22 +36,27 @@ h1 a {
 }
 
 h1.hero-title {
-  font-size: 6em;
-  z-index: 1;
   width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 1;
   transform: translate(-50%, -60%);
-  color: white;
   text-align: center;
+  font-size: 6em;
+  color: white;
+}
+
+h1.short-title {
+  display: none;
+  font-size: 2em;
 }
 
 h2 {
-  font-family: 'Work Sans', Helvetica, Arial, Sans-Serif;
-  font-weight: 400;
-  font-size: 1.6em;
   text-align: center;
+  font-family: 'Work Sans', Helvetica, Arial, Sans-Serif;
+  font-size: 1.6em;
+  font-weight: 400;
   line-height: 1.3;
   color: olivedrab;
 }
@@ -65,45 +70,45 @@ h2.subhead-text {
 }
 
 h3 {
-  color: olivedrab;
-  font-size: 1.2em;
   margin: 2.5em auto 1em;
+  font-size: 1.2em;
+  color: olivedrab;
 }
 
 h3.talk-title {
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
 h4 {
-  font-family: 'Work Sans', Helvetica, Arial, Sans-Serif;
-  font-weight: 300;
-  font-size: .85em;
   margin: 1em auto;
   text-align: center;
-  color: #DAC1BA;
+  font-family: 'Work Sans', Helvetica, Arial, Sans-Serif;
+  font-size: .85em;
+  font-weight: 300;
+  color: #4D2B22;
 }
 
 h4 a {
   text-decoration: none;
-  color: #DAC1BA;
+  color: #4D2B22;
 }
 
 h4 a:hover {
-  color: #BFA9A3;
+  color: #CF442B;
 }
 
 p {
-  font-family: 'Work Sans', Helvetica, Arial, Sans-Serif;
-  font-weight: 400;
-  font-size: 1.1em;
   display: block;
-  line-height: 2;
-  color: #7f8c8d;
   margin-top: 1em;
+  font-family: 'Work Sans', Helvetica, Arial, Sans-Serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3E5759;
 }
 
 p a {
-  color: #7f8c8d;
+  color: #3E5759;
   text-decoration: none;
 }
 
@@ -112,34 +117,33 @@ p a:hover {
 }
 
 p.caption-title {
-  margin-top: 0;
-  line-height: 1.2;
   margin-top: 1em;
+  line-height: 1.2;
 }
 
 p.caption-text {
+  margin-top: .5em;
   font-size: .85em;
   line-height: 1.5;
-  margin-top: .5em;
 }
 
 span.drop {
   float: left;
-  color: #3E5759;
-  font-size: 60px;
-  line-height: 20px;
   padding: 30px 8px 0 0;
   font-family: "Bodoni", Helvetica, Arial, Sans-Serif;
+  font-size: 60px;
+  line-height: 20px;
+  color: #3E5759;
 }
 
 strong {
-  font-weight: 400;
+  font-weight: 700;
   color: #3E5759;
 }
 
 p.footer-text {
-  font-size: .75em;
   text-align: center;
+  font-size: .75em;
 }
 
 ul li {
@@ -148,36 +152,36 @@ ul li {
 }
 
 .nav .main {
-  z-index: 2;
-  font-size: 1em;
   width: 70%;
   margin: 0.25em auto 0;
+  z-index: 2;
+  font-size: 1em;
 }
 
 .nav-home {
-  z-index: 1;
   position: absolute;
   bottom: 0;
   left: 50%;
+  z-index: 1;
+  width: 100%;
   transform: translateX(-50%);
   background-color: white;
-  width: 100%;
 }
 
 .nav {
-  font-size: .85em;
   width: 70%;
   margin: 1em auto 1.5em;
+  font-size: .85em;
 }
 
 .nav a {
+  display: inline-block;
+  width: 16.66%;
+  padding: 1em 0 0 0;
   font-family: 'Work Sans', Helvetica, Arial, Sans-Serif;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
-  width: 16.66%;
-  padding: 1em 0 0 0;
   color: #FF6D5E;
 }
 
@@ -210,8 +214,8 @@ ul li {
 }
 
 hr {
-  height: .2em;
   width: 16.66%;
+  height: .2em;
   margin-left: 0;
   background: #CF442B;
   border: none;
@@ -239,8 +243,8 @@ hr.about  {
 }
 
 hr.talk-divider {
-  height: 0;
   width: 100%;
+  height: 0;
   border: 1px solid #CF442B;
   border-bottom: 0;
 }
@@ -252,14 +256,14 @@ div.main-wrapper {
 }
 
 .wrapper {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
 .wrapper a {
-  color: #7C1E44;
-  text-decoration: none;
   font-weight: 400;
+  text-decoration: none;
+  color: #7C1E44;
 }
 
 .wrapper a:hover {
@@ -277,13 +281,13 @@ div.main-wrapper {
 }
 
 .center-text {
-  text-align: center;
   margin: 2em auto;
+  text-align: center;
 }
 
 hr.divider-line {
-  height: 1px;
   width: 100%;
+  height: 1px;
   margin: 2em auto;
   background: #7f8c8d;
 }
@@ -306,9 +310,9 @@ hr.divider-line {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
   min-width: 50%;
   min-height: 50%;
+  margin: auto;
   -webkit-filter: brightness(50%);
 }
 
@@ -357,12 +361,35 @@ img.talk-img {
   width: 100%;
 }
 
+img.img-centered {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+img.img-left {
+  margin-bottom: 2em;
+}
+
+#talk:before {
+  content: "";
+  display: block;
+}
+
+@media (min-width: 993px) {
+  img.img-left {
+    float: left;
+    width: 50%;
+    margin: 0.5em 2em 2em 0;
+  }
+}
+
 .video-container {
   position: relative;
   height: 0;
   margin-top: 2em;
-  padding-bottom: 56.25%;
   padding-top: 30px;
+  padding-bottom: 56.25%;
   overflow: hidden;
 }
 
@@ -386,8 +413,8 @@ img.talk-img {
 
 .scrollup {
   position: fixed;
-  bottom: 50px;
   right: 100px;
+  bottom: 50px;
   display: none;
 }
 
@@ -398,32 +425,29 @@ img.talk-img {
 }
 
 hr.footer-line {
-  height: 1px;
   width: 60%;
+  height: 1px;
   margin: 0 auto;
   background: #7f8c8d;
 }
 
 .btn-5 {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background: none;
-  cursor: pointer;
-  padding: 25px 80px;
+  position: relative;
   display: inline-block;
-  text-transform: uppercase;
+  min-width: 260px;
+  height: 70px;
+  padding: 25px 80px;
+  font-family: inherit;
+  font-size: 16px;
   letter-spacing: 2px;
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
   font-weight: 400;
   outline: none;
+  border: none;
   background: #E4542F;
   color: #fff;
-  height: 70px;
-  min-width: 260px;
-  line-height: 24px;
-  font-size: 16px;
-  position: relative;
 }
 
 .btn-5 span {
@@ -439,8 +463,8 @@ hr.footer-line {
 .graph-container {
   width: 100%;
   margin: 1em auto;
-  background: white;
   border: 1px solid #ddd;
+  background: white;
 }
 
 .featherlight .featherlight-close-icon {
@@ -457,13 +481,16 @@ hr.footer-line {
   margin: 0 auto; 
 }
 
-
 /*==================================================
 Media Queries
 ==================================================*/
 
 /* Medium Devices, Desktops */
 @media (max-width: 992px) {
+
+  .wrapper {
+    width: 75%;
+  }
 
 }
 
@@ -472,55 +499,29 @@ Media Queries
 
   h1 {
     margin: .5em auto;
-    font-size: 5em;
   }
 
   h1.hero-title {
-    font-size: 5em;
     top: 40%;
   }
 
-  h2 {
-    font-size: 2em;
-  }
-
   h2.subhead-text {
-    font-size: 2em;
     margin: 2em auto 1em;
   }
 
   h3 {
-    font-size: 2em;
     margin: 1em auto .5em;
   }
 
   h4 {
-    font-size: 1em;
     margin: 3em auto;
   }
 
-  h4 a {
-    font-size: 1em;
-  }
-
-  p {
-    font-size: 2em;
-  }
-
-  p.caption-title {
-    font-size: 1.5em;
-  }
-
-  p.caption-text {
-    font-size: 2em;
-  }
-
   p.footer-text {
-    font-size: 1.5em;
+    font-size: 0.85em;
   }
 
   span .drop {
-    font-size: 200px;
     line-height: 200px;
   }
 
@@ -529,20 +530,16 @@ Media Queries
   }
 
   .nav .main {
-    margin: 1em auto 0;
-    font-size: 3em;
     width: 90%;
+    margin: 1em auto 0;
   }
 
   .nav {
-    font-size: 1em;
     width: 90%;
   }
 
   .nav a {
     width: 50%;
-    font-size: 2em;
-    line-height: 2em;
     margin: 0 auto;
   }
 
@@ -569,10 +566,10 @@ Media Queries
   }
 
   img.left {
-    width: 50%;
-    margin: 0 auto;
     display: block;
     float: none;
+    width: 50%;
+    margin: 0 auto;
   }
 
   .rwd-break {
@@ -582,12 +579,11 @@ Media Queries
   .btn-5 {
     width: 100%;
     height: 150px;
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
   }
 
   .btn-5 span {
-    font-size: 2em;
     transform: translateY(40%);
   }
 
@@ -597,10 +593,10 @@ Media Queries
 @media (min-width: 768px) {
 
   .btn-5 {
+    overflow: hidden;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    overflow: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -616,20 +612,19 @@ Media Queries
   }
 
   .btn-5:before {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
     speak: none;
+    font-size: 180%;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 2.5;
-    position: relative;
     -webkit-font-smoothing: antialiased;
-    position: absolute;
-    left: 0;
-    top: -100%;
-    height: 100%;
-    width: 100%;
-    font-size: 180%;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -673,69 +668,12 @@ Media Queries
 /* Extra Small Devices, Phones */
 @media (max-width: 480px) {
 
-  h1 {
-    font-size: 2em;
-  }
-
-  h1.hero-title {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  h2.subhead-text {
-    font-size: 1.5em;
-  }
-
-  h3 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  p.caption-title {
-    font-size: 1.5em;
-  }
-
-  p.caption-text {
-    font-size: 1em;
-  }
-
-  p.footer-text {
-    font-size: .5em;
-  }
-
-  .wrapper {
-    width: 90%;
-  }
-
-  .nav .main {
-    margin: 1em auto 0;
-    font-size: 3em;
-    width: 90%;
-  }
-
-  .nav {
-    font-size: 1em;
-    width: 90%;
-  }
-
-  .nav a {
-    width: 50%;
-    line-height: 1.5em;
-    margin: 0 auto;
-  }
-
-  .nav a {
-    font-size: 1em;
-  }
-
-  hr {
+  h1.long-title {
     display: none;
+  }
+
+  h1.short-title {
+    display: block;
   }
 
   .btn-5 {
