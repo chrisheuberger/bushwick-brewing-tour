@@ -503,6 +503,7 @@ Media Queries
 
   h1.hero-title {
     top: 40%;
+    font-size: 2em;
   }
 
   h2.subhead-text {
