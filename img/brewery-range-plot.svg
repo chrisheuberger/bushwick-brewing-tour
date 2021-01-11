@@ -6,13 +6,13 @@
 	.st0{fill:#E5E6E7;}
 	.st1{fill:none;}
 	.st2{fill:#203C59;}
-	.st3{font-family:'Lato-Regular';}
+	.st3{font-family:'Lato-Regular',Monaco,'Courier New',monospace;}
 	.st4{font-size:18px;}
 	.st5{letter-spacing:1;}
 	.st6{fill:none;stroke:#E5E6E7;stroke-width:16;stroke-miterlimit:10;}
 	.st7{fill:#FFD770;}
 	.st8{fill:#FF3D6C;}
-	.st9{font-family:'Lato-Heavy';}
+	.st9{font-family:'Lato-Bold','Lato-Regular',Monaco,'Courier New',monospace;letter-spacing:2px;}
 	.st10{font-size:50px;}
 	.st11{letter-spacing:7;}
 	.st12{font-size:30px;}
