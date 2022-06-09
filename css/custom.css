@@ -1,3 +1,5 @@
+/* base */
+
 html {
   background-image: url(../img/bubble-pattern.png);
   background-repeat: repeat;
@@ -8,6 +10,8 @@ body {
   font-family: 'Work Sans', Helvetica, Arial, Sans-Serif;
   font-weight: 400;
 }
+
+/* type */
 
 @font-face {
   src: url('../fonts/BauerBodoniStd-Roman.otf');
@@ -58,7 +62,7 @@ h2 {
   font-size: 1.6em;
   font-weight: 400;
   line-height: 1.3;
-  color: olivedrab;
+  color: #19402c;
 }
 
 h2.subhead-top {
@@ -72,7 +76,7 @@ h2.subhead-text {
 h3 {
   margin: 2.5em auto 1em;
   font-size: 1.2em;
-  color: olivedrab;
+  color: #19402c;
 }
 
 h3.talk-title {
@@ -94,7 +98,7 @@ h4 a {
 }
 
 h4 a:hover {
-  color: #CF442B;
+  color: #e63a25;
 }
 
 p {
@@ -104,11 +108,11 @@ p {
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.5;
-  color: #3E5759;
+  color: #19402c;
 }
 
 p a {
-  color: #3E5759;
+  color: #19402c;
   text-decoration: none;
 }
 
@@ -133,12 +137,12 @@ span.drop {
   font-family: "Bodoni", Helvetica, Arial, Sans-Serif;
   font-size: 60px;
   line-height: 20px;
-  color: #3E5759;
+  color: #19402c;
 }
 
 strong {
   font-weight: 700;
-  color: #3E5759;
+  color: #19402c;
 }
 
 p.footer-text {
@@ -151,43 +155,7 @@ ul li {
   text-align: center;
 }
 
-.nav .main {
-  width: 70%;
-  margin: 0.25em auto 0;
-  z-index: 2;
-  font-size: 1em;
-}
-
-.nav-home {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  z-index: 1;
-  width: 100%;
-  transform: translateX(-50%);
-  background-color: white;
-}
-
-.nav {
-  width: 70%;
-  margin: 1em auto 1.5em;
-  font-size: .85em;
-}
-
-.nav a {
-  display: inline-block;
-  width: 16.66%;
-  padding: 1em 0 0 0;
-  font-family: 'Work Sans', Helvetica, Arial, Sans-Serif;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #FF6D5E;
-}
-
-.nav a:hover {
-  color: #CF442B;
-}
+/* global */
 
 .one:hover ~ hr {
   margin-left: 0;
@@ -217,7 +185,7 @@ hr {
   width: 16.66%;
   height: .2em;
   margin-left: 0;
-  background: #CF442B;
+  background: #e63a25;
   border: none;
   transition: .3s ease-in-out;
 }
@@ -245,7 +213,7 @@ hr.about  {
 hr.talk-divider {
   width: 100%;
   height: 0;
-  border: 1px solid #CF442B;
+  border: 1px solid #e63a25;
   border-bottom: 0;
 }
 
@@ -294,6 +262,16 @@ hr.divider-line {
 
 .shim {
   padding: 1em;
+}
+
+.notice {
+  margin: 2em 0;
+  padding: 2em;
+  background: LemonChiffon;
+}
+
+.notice .subhead-text {
+  margin-top: 0;
 }
 
 #bg {
@@ -411,26 +389,6 @@ img.img-left {
   display: none;
 }
 
-.scrollup {
-  position: fixed;
-  right: 100px;
-  bottom: 50px;
-  display: none;
-}
-
-.footer {
-  width: 100%;
-  float: left;
-  margin: 3em auto 1em;
-}
-
-hr.footer-line {
-  width: 60%;
-  height: 1px;
-  margin: 0 auto;
-  background: #7f8c8d;
-}
-
 .btn-5 {
   position: relative;
   display: inline-block;
@@ -481,11 +439,72 @@ hr.footer-line {
   margin: 0 auto; 
 }
 
-/*==================================================
-Media Queries
-==================================================*/
+.scrollup {
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+  display: none;
+}
 
-/* Medium Devices, Desktops */
+/* nav */
+
+.nav .main {
+  width: 70%;
+  margin: 0.25em auto 0;
+  z-index: 2;
+  font-size: 1em;
+}
+
+.nav-home {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  width: 100%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+
+.nav {
+  width: 70%;
+  margin: 1em auto 1.5em;
+  font-size: .85em;
+}
+
+.nav a {
+  display: inline-block;
+  width: 16.66%;
+  padding: 1em 0 0 0;
+  font-family: 'Work Sans', Helvetica, Arial, Sans-Serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #d44f2d;
+}
+
+.nav a:hover {
+  color: #e63a25;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  float: left;
+  margin: 3em auto 1em;
+}
+
+hr.footer-line {
+  width: 60%;
+  height: 1px;
+  margin: 0 auto;
+  background: #7f8c8d;
+}
+
+/*=== Media Queries ===*/
+
+/* desktop */
+
 @media (max-width: 992px) {
 
   .wrapper {
@@ -494,7 +513,8 @@ Media Queries
 
 }
 
-/* Small Devices, Tablets */
+/* tablet */
+
 @media (max-width: 768px) {
 
   h1 {
@@ -590,7 +610,8 @@ Media Queries
 
 }
 
-/* Added for Buttons */
+/* buttons on tablet */
+
 @media (min-width: 768px) {
 
   .btn-5 {
@@ -641,7 +662,7 @@ Media Queries
   }
 
   .btn-5:active {
-    background: #FF6D5E;
+    background: #d44f2d;
     top: 2px;
   }
 
@@ -666,7 +687,8 @@ Media Queries
 
 }
 
-/* Extra Small Devices, Phones */
+/* way small */
+
 @media (max-width: 480px) {
 
   h1.long-title {
